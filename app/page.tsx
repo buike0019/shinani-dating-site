@@ -1,4 +1,14 @@
+
+import { useState } from "react";
+import SplashScreen from "@/components/SplashScreen";
+
 export default function HomePage() {
+  const [showSplash, setShowSplash] = useState(true);
+
+  if (showSplash) {
+    return <SplashScreen onFinish={() => setShowSplash(false)} />;
+  }
+
   return (
     <main className="h-screen flex flex-col bg-gradient-to-b from-pink-500 via-red-500 to-orange-500 text-white">
       {/* Navbar */}
@@ -27,5 +37,5 @@ export default function HomePage() {
         </a>
       </section>
     </main>
-  )
+  );
 }
