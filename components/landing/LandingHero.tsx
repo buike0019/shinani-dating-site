@@ -7,7 +7,7 @@ export default function LandingPage() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="/images/tinder-bg.jpg"
+          src="/birds.png"
           alt="Tinder background"
           className="w-full h-full object-cover opacity-60"
         />
