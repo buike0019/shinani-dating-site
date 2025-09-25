@@ -2,11 +2,20 @@
 
 import { signIn } from "next-auth/react";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 export default function LoginPage() {
   const [error, setError] = useState("");
+  const searchParams = useSearchParams();
+  const signupSuccess = searchParams.get("signup");
+
+  useEffect(() => {
+    if (signupSuccess === "success") {
+      alert("✅ Account created successfully! Please log in.");
+    }
+  }, [signupSuccess]);
 
   const handleEmailLogin = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -44,18 +53,8 @@ export default function LoginPage() {
         </div>
 
         <form onSubmit={handleEmailLogin} className="flex flex-col gap-4">
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            className="border px-4 py-2 rounded-full"
-          />
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            className="border px-4 py-2 rounded-full"
-          />
+          <input type="email" name="email" placeholder="Email" className="border px-4 py-2 rounded-full" />
+          <input type="password" name="password" placeholder="Password" className="border px-4 py-2 rounded-full" />
           <Button type="submit" className="bg-red-500 text-white rounded-full py-2">
             Log In
           </Button>

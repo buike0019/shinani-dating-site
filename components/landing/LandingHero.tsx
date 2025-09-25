@@ -26,7 +26,7 @@ export default function LandingPage() {
 
         <div className="flex flex-col gap-4 w-full max-w-sm">
           {/* Create Account → /signup */}
-          <Link href="/register" passHref>
+          <Link href="/signup" passHref>
             <Button className="bg-gradient-to-r from-black to-red-500 hover:from-red-500 hover:to-pink-900 text-white w-full rounded-full shadow-lg">
               Create Account
             </Button>
