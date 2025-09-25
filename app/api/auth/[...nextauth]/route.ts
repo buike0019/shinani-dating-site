@@ -15,7 +15,6 @@ const handler = NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials) {
-        // ⚡ Later: replace with DB call
         if (
           credentials?.email === "test@example.com" &&
           credentials?.password === "password123"
@@ -27,9 +26,6 @@ const handler = NextAuth({
     }),
   ],
   secret: process.env.NEXTAUTH_SECRET,
-  pages: {
-    signIn: "/login", // custom login page
-  },
 });
 
 export { handler as GET, handler as POST };

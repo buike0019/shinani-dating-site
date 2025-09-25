@@ -1,5 +1,7 @@
 "use client";
+
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function LandingPage() {
   return (
@@ -21,13 +23,21 @@ export default function LandingPage() {
         <p className="max-w-lg mb-8 text-lg md:text-xl drop-shadow">
           Make meaningful connections and meet new people around the world.
         </p>
+
         <div className="flex flex-col gap-4 w-full max-w-sm">
-          <Button className="bg-gradient-to-r from-black to-red-500 hover:from-red-500 hover:to-pink-900 text-white w-full rounded-full shadow-lg">
-            Create Account
-          </Button>
-          <Button className="bg-white text-pink-600 hover:bg-black hover:text-white w-full rounded-full shadow-md">
-            Log In
-          </Button>
+          {/* Create Account → /signup */}
+          <Link href="/register" passHref>
+            <Button className="bg-gradient-to-r from-black to-red-500 hover:from-red-500 hover:to-pink-900 text-white w-full rounded-full shadow-lg">
+              Create Account
+            </Button>
+          </Link>
+
+          {/* Log In → /login */}
+          <Link href="/login" passHref>
+            <Button className="bg-white text-pink-600 hover:bg-black hover:text-white w-full rounded-full shadow-md">
+              Log In
+            </Button>
+          </Link>
         </div>
       </div>
     </div>
