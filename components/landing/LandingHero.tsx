@@ -16,7 +16,7 @@ export default function LandingPage() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-          Shinani®
+          Chimunanya Ltd®
         </h1>
         <p className="max-w-lg mb-8 text-lg md:text-xl drop-shadow">
           Make meaningful connections and meet new people around the world.
