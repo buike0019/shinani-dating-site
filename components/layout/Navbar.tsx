@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-20 w-[90%] md:w-[80%] bg-black/60 backdrop-blur-lg border border-white/20 rounded-4xl shadow-lg flex items-center justify-between px-6 py-3">
+    <nav className="mx-auto my-3 z-20 w-[90%] md:w-[80%] bg-black/60 backdrop-blur-lg border border-white/20 rounded-4xl shadow-lg flex items-center justify-between px-6 py-3">
       {/* Logo */}
       <h1 className="text-2xl font-bold text-red-500">Shinani®</h1>
 

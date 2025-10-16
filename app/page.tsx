@@ -19,9 +19,9 @@ export default function HomePage() {
   }
 
   return (
-    <main className="min-h-screen flex flex-col bg-gradient-to-b from-pink-500 via-red-500 to-orange-500 text-white">
+    <main className="min-h-screen flex flex-col text-white">
       {/* Sticky Navbar */}
-      <header className="sticky top-0 z-50 bg-gradient-to-r from-pink-600/80 to-red-600/80 backdrop-blur-md shadow-md">
+      <header className="sticky top-0 z-50  shadow-md py-3">
         <Navbar />
       </header>
 

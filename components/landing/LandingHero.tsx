@@ -3,6 +3,8 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+export default function LandingHero() {
+
   return (
     <div className="relative min-h-screen pb-24 text-white overflow-hidden">
       {/* Parallax Background */}
@@ -15,7 +17,7 @@ import Link from "next/link";
       <div className="absolute inset-0 bg-gradient-to-bl from-red-600/70 via-black/80 to-black"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+  <div className="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-96px)] text-center px-4">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
           Shinani
         </h1>
