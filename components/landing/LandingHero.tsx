@@ -3,9 +3,8 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function LandingPage() {
   return (
-    <div className="relative h-screen text-white overflow-hidden">
+    <div className="relative min-h-screen pb-24 text-white overflow-hidden">
       {/* Parallax Background */}
       <div
         className="absolute inset-0 bg-fixed bg-center bg-cover"
@@ -18,7 +17,7 @@ export default function LandingPage() {
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-6 drop-shadow-lg">
-          Chimunanya Ltd®
+          Shinani
         </h1>
         <p className="max-w-lg mb-8 text-lg md:text-xl drop-shadow">
           Make meaningful connections and meet new people around the world.
